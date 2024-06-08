@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-PurchaseModelDemo/Pods-PurchaseModelDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Qonversion/Qonversion.framework
+${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Singular-SDK/Main/Singular.framework/Singular

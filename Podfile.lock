@@ -1,0 +1,28 @@
+PODS:
+  - Qonversion (5.8.6):
+    - Qonversion/Main (= 5.8.6)
+  - Qonversion/Main (5.8.6)
+  - Singular-SDK (12.4.2):
+    - Singular-SDK/Main (= 12.4.2)
+  - Singular-SDK/Main (12.4.2)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - Qonversion
+  - Singular-SDK
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - Qonversion
+    - Singular-SDK
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  Qonversion: bb1492d5025c56e7160a32ba85d4b3ea8486a86b
+  Singular-SDK: 19ce54df40e2b3a4e8c2ecf4d331cb10c0676a3d
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: 5dc11e16cd032d106fcdda6868211402c6abb09a
+
+COCOAPODS: 1.15.0
