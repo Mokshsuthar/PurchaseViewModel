@@ -8,6 +8,7 @@ Copy the `PurchaseModel` folder into your project's `model` folder.
 ## Step 2: AppDelegate Setup
 Add the following function in your `AppDelegate` and call it within the `application(_:didFinishLaunchingWithOptions:)` method.
 
+### AppDelegate Code
 ```swift
 class AppDelegate: NSObject, UIApplicationDelegate {
     
@@ -21,7 +22,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         self.setUpCompleteTransactions()
         
         // Your app's sharedSecret
-        PurchaseModel.shared.sharedSecret = "asdfghjklsdfghjklsdfghj_123456"
+        PurchaseModel.shared.sharedSecret = "12345678987654345dfghjkmnbvch"
         
         // Mention all your purchase IDs with their default prices
         PurchaseModel.shared.purchaseIds = [
@@ -35,6 +36,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // Run this to get all purchase IDs details and price
         PurchaseModel.shared.getPrice()
+        
+        // Extra configurations
+        // If your project includes Qonversion
+        QonversionModel.shared.configure(projectKey: "qwertyuiop", launchMode: .subscriptionManagement)
+        
+        // If your project includes Singular
+        SingularModel.shared.configureSingular(apiKey: "qwertyuiop", secret: "sdfghjkl")
     }
 }
 ```
@@ -124,5 +132,13 @@ extension ContentViewModel: PurchaseModelDelegate {
 }
 ```
 
-With these steps, you should be able to integrate and use the `PurchaseModel` in your project. Ensure you customize the `purchaseIds` and other properties as per your app's requirements.
+## Checking Purchase Status
+There is no need to save any user defaults regarding purchases. Everything is already managed and saved by the `PurchaseModel`. To check if a purchase has been made, you can use any of the following UserDefaults keys:
 
+- `UserDefaults.isPurchase`
+- `UserDefaults.isProUser`
+- `UserDefaults.isProUser.isPro`
+
+All these keys hold the same value.
+
+With these steps, you should be able to integrate and use the `PurchaseModel` in your project. Ensure you customize the `purchaseIds` and other properties as per your app's requirements.
