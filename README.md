@@ -21,7 +21,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         self.setUpCompleteTransactions()
         
         // Your app's sharedSecret
-        PurchaseModel.shared.sharedSecret = "46dc576d6aa1413a93021006f7d880aa"
+        PurchaseModel.shared.sharedSecret = "asdfghjklsdfghjklsdfghj_123456"
         
         // Mention all your purchase IDs with their default prices
         PurchaseModel.shared.purchaseIds = [
