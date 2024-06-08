@@ -6,7 +6,7 @@ This document explains how to integrate and use the `PurchaseModel` in your proj
 To handle in-app purchases, install the `SwiftyStoreKit` pod.
 
 1. Open your terminal and navigate to your project directory.
-2. Open your `Podfile` and add the following line:
+2. Open your `Podfile` and add the following line and install pod:
 
     ```ruby
     pod 'SwiftyStoreKit'
