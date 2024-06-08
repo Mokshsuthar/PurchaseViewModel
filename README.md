@@ -52,7 +52,6 @@ In your ViewModel, use the following code to manage purchases. This section brea
 
 ### Import Required Libraries
 ```swift
-import Foundation
 import SwiftyStoreKit
 ```
 
