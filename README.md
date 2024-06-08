@@ -2,10 +2,20 @@
 
 This document explains how to integrate and use the `PurchaseModel` in your project. Follow the steps below to set up and utilize the purchase model effectively.
 
-## Step 1: Copy PurchaseModel Folder
+## Step 1: Install SwiftyStoreKit
+To handle in-app purchases, install the `SwiftyStoreKit` pod.
+
+1. Open your terminal and navigate to your project directory.
+2. Open your `Podfile` and add the following line:
+
+    ```ruby
+    pod 'SwiftyStoreKit'
+    ```
+
+## Step 2: Copy PurchaseModel Folder
 Copy the `PurchaseModel` folder into your project's `model` folder.
 
-## Step 2: AppDelegate Setup
+## Step 3: AppDelegate Setup
 Add the following function in your `AppDelegate` and call it within the `application(_:didFinishLaunchingWithOptions:)` method.
 
 ### AppDelegate Code
@@ -22,7 +32,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         self.setUpCompleteTransactions()
         
         // Your app's sharedSecret
-        PurchaseModel.shared.sharedSecret = "12345678987654345dfghjkmnbvch"
+        PurchaseModel.shared.sharedSecret = "1234567890qwertyuioifdfb"
         
         // Mention all your purchase IDs with their default prices
         PurchaseModel.shared.purchaseIds = [
@@ -47,7 +57,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 ```
 
-## Step 3: ViewModel Setup
+## Step 4: ViewModel Setup
 In your ViewModel, use the following code to manage purchases. This section breaks down the necessary steps for better understanding.
 
 ### Import Required Libraries
