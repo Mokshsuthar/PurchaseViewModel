@@ -38,7 +38,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         PurchaseModel.shared.purchaseIds = [
             .init(type: .yearly, purchaseId: "com.maximaapps.passportphoto.yearly", priceDefaultValue: "$9.99", priceDefaultValueDouble: 9.99),
             .init(type: .lifeTime, purchaseId: "com.maximaapps.passportphoto.lifetime", priceDefaultValue: "$19.99", priceDefaultValueDouble: 19.99, needSplitPrice: true, splitPriceStringSuffix: "Month"),
-            .init(type: .lifeTime, purchaseId: "com.maximaapps.passportphoto.lifetimew", priceDefaultValue: "$14.99", priceDefaultValueDouble: 14.99, needSplitPrice: true, splitPriceStringSuffix: "Month"),
+            .init(type: .lifeTime, purchaseId: "com.maximaapps.passportphoto.lifetimew",priceDefaultValue: "$14.99",priceDefaultValueDouble: 14.99, needSplitPrice: true,splitPriceStringSuffix: "Month",isIncludeVerifySubscription: false), //if provide isIncludeVerifySubscription false it will not include this id during restore purchase
             .init(type: .lifeTime, purchaseId: "com.maximaapps.passportphoto.lifetime2", priceDefaultValue: "$29.99", priceDefaultValueDouble: 29.99),
             .init(type: .weekly, purchaseId: "com.maximaapps.passportphoto.weekly", priceDefaultValue: "$4.99", priceDefaultValueDouble: 4.99),
             .init(type: .yearly, purchaseId: "com.maximaapps.passportphoto.yearly2", priceDefaultValue: "$14.99", priceDefaultValueDouble: 14.99)
